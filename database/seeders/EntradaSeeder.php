@@ -2,14 +2,13 @@
 
 namespace Database\Seeders;
 
+use App\Models\Entrada;
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class EntradaSeeder extends Seeder
 {
     public function run()
     {
-        $this->call([
-            EntradaSeeder::class,
-        ]);
+        Entrada::factory(10)->create();
     }
 }
